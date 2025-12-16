@@ -1,0 +1,189 @@
+{
+  "info": {
+    "_postman_id": "df564fb4-887a-4ba1-b8de-534988839ed5",
+    "name": "Beneficiary Service",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "create",
+      "id": "e6a1151d-94f7-4e9a-bba1-62149b7da427",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\t\"name\": \"Joel sam\",\r\n\t\"mobile\": \"9736248980\",\r\n\t\"email\": \"joelsam@example.com\",\r\n\t\"type\": \"Individual\",\r\n\t\"accounts\": [\r\n\t\t{\r\n\t\t\t\"nickName\": \"JS\",\r\n\t\t\t\"actualName\": \"Joel Sam\",\r\n\t\t\t\"actualNameFlag\": \"N\",\r\n\t\t\t\"ifsc\": \"HDFC0001344\",\r\n\t\t\t\"accountNumber\": \"127956709012\",\r\n\t\t\t\"bankName\": \"HDFC Bank\",\r\n\t\t\t\"dailyCount\": 3,\r\n\t\t\t\"dailyLimit\": 150000,\r\n\t\t\t\"perTransactionLimit\": 50000\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"nickName\": \"JSS\",\r\n\t\t\t\"actualName\": \"Joel Sam Salary\",\r\n\t\t\t\"actualNameFlag\": \"N\",\r\n\t\t\t\"ifsc\": \"ICIC0007688\",\r\n\t\t\t\"accountNumber\": \"786654321000\",\r\n\t\t\t\"bankName\": \"ICICI Bank\",\r\n\t\t\t\"dailyCount\": 5,\r\n\t\t\t\"dailyLimit\": 100000,\r\n\t\t\t\"perTransactionLimit\": 25000\r\n\t\t}\r\n\t]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/beneficiary/create",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "beneficiary",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get id",
+      "id": "87e21c77-7f78-4d0b-829c-f1915594b961",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/beneficiary/get/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "beneficiary",
+            "get",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update id",
+      "id": "37c0589c-a40a-44fe-8500-052b843580bc",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "content",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\t\"name\": \"Amar sen\",\r\n\t\"mobile\": \"9736245982\",\r\n\t\"email\": \"amarsen@example.com\",\r\n\t\"type\": \"Individual\",\r\n\t\"accounts\": [\r\n\t\t{\r\n\t\t\t\"nickName\": \"AS\",\r\n\t\t\t\"actualName\": \"Amar Sen\",\r\n\t\t\t\"actualNameFlag\": \"N\",\r\n\t\t\t\"ifsc\": \"HDFC0002312\",\r\n\t\t\t\"accountNumber\": \"137954739052\",\r\n\t\t\t\"bankName\": \"HDFC Bank\",\r\n\t\t\t\"dailyCount\": 3,\r\n\t\t\t\"dailyLimit\": 100000,\r\n\t\t\t\"perTransactionLimit\": 40000\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"nickName\": \"ASS\",\r\n\t\t\t\"actualName\": \"Amar Sen Salary\",\r\n\t\t\t\"actualNameFlag\": \"N\",\r\n\t\t\t\"ifsc\": \"ICIC0007643\",\r\n\t\t\t\"accountNumber\": \"784654321301\",\r\n\t\t\t\"bankName\": \"ICICI Bank\",\r\n\t\t\t\"dailyCount\": 4,\r\n\t\t\t\"dailyLimit\": 100000,\r\n\t\t\t\"perTransactionLimit\": 20000\r\n\t\t}\r\n\t]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/beneficiary/update/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "beneficiary",
+            "update",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "create2",
+      "id": "3f7a50ee-0fcd-447e-83d3-ef457fd6a95a",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\t\"name\": \"Sohel Azhar\",\r\n\t\"mobile\": \"8309847892\",\r\n\t\"email\": \"sohelazar@example.com\",\r\n\t\"type\": \"Individual\",\r\n\t\"accounts\": [\r\n\t\t{\r\n\t\t\t\"nickName\": \"SA\",\r\n\t\t\t\"actualName\": \"Sohel Azhar\",\r\n\t\t\t\"actualNameFlag\": \"N\",\r\n\t\t\t\"ifsc\": \"HDFC0001254\",\r\n\t\t\t\"accountNumber\": \"124952755042\",\r\n\t\t\t\"bankName\": \"HDFC Bank\",\r\n\t\t\t\"dailyCount\": 4,\r\n\t\t\t\"dailyLimit\": 120000,\r\n\t\t\t\"perTransactionLimit\": 40000\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"nickName\": \"SAS\",\r\n\t\t\t\"actualName\": \"Sohel Azhar Salary\",\r\n\t\t\t\"actualNameFlag\": \"N\",\r\n\t\t\t\"ifsc\": \"ICIC0007348\",\r\n\t\t\t\"accountNumber\": \"7866543213040\",\r\n\t\t\t\"bankName\": \"ICICI Bank\",\r\n\t\t\t\"dailyCount\": 3,\r\n\t\t\t\"dailyLimit\": 90000,\r\n\t\t\t\"perTransactionLimit\": 25000\r\n\t\t}\r\n\t]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/beneficiary/create",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "beneficiary",
+            "create"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete",
+      "id": "a4362624-b9d8-471a-835c-8f0d7cd835fa",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/beneficiary/delete/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "beneficiary",
+            "delete",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "get",
+      "id": "f9d12413-bbd3-4aeb-95ae-27c440b35168",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/beneficiary/get",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "beneficiary",
+            "get"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
